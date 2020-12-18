@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kuycoding.kuytravel"> <!-- Internet permission -->
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+    <!--
+  getLayoutInflater       The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.traveler.category.TravelDetailCategoryActivity"></activity>
+        <activity android:name=".ui.traveler.hotel.TravelerHotelListActivity" />
+        <activity android:name=".ui.traveler.travel.TravelDetailActivity" />
+        <activity android:name=".ui.postTravel.PostTravelDetailBookingActivity" />
+        <activity android:name=".ui.traveler.travel.TravelBookingActivity" />
+        <activity android:name=".ui.postTravel.PostTravelProfileActivity" />
+        <activity
+            android:name=".ui.traveler.hotel.CommentHotelActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.traveler.hotel.HotelBookingDetailActivity" />
+        <activity android:name=".ui.postHotel.PostHotelDetailBookingActivity" />
+        <activity android:name=".ui.traveler.hotel.HotelBookingSuccessActivity" />
+        <activity android:name=".ui.traveler.hotel.HotelBookingActivity" />
+        <activity android:name=".ui.postHotel.PostHotelProfileActivity" />
+        <activity android:name=".ui.postHotel.PostHotelMainActivity" />
+        <activity android:name=".ui.admin.hotel.DetailHotelActivity" />
+        <activity android:name=".ui.admin.hotel.AddHotelActivity" />
+        <activity android:name=".ui.admin.user.AddUserHotelActivity" />
+        <activity android:name=".ui.admin.hotel.AdminHotelActivity" />
+        <activity android:name=".ui.admin.travel.EditTravelActivity" />
+        <activity android:name=".ui.admin.AdminListActivity" />
+        <activity android:name=".ui.admin.user.AddUserActivity" />
+        <activity android:name=".ui.admin.user.AdminUsersActivity" />
+        <activity
+            android:name=".ui.admin.travel.CommentTravelActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.traveler.category.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".ui.admin.travel.DetailTravelActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".ui.admin.travel.AdminAddTravelActivity" />
+        <activity android:name=".ui.admin.travel.AdminTravelActivity" />
+        <activity android:name=".ui.admin.category.AdminCategoryActivity" />
+        <activity android:name=".ui.home.OfflineActivity" />
+        <activity android:name=".ui.traveler.TravelerHomeActivity" />
+        <activity android:name=".ui.admin.AdminHomeActivity" />
+        <activity android:name=".ui.postTravel.PostTravelActivity" />
+        <activity
+            android:name=".ui.home.ForgotPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.home.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.home.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.home.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

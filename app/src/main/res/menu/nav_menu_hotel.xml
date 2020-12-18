@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_menu_hotel_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/nav_menu_hotel_list"
+        android:title="Hotel"
+        android:icon="@drawable/ic_hotel_black_24dp"/>
+    <item
+        android:id="@+id/nav_menu_hotel_booking"
+        android:title="Booking"
+        android:icon="@drawable/ic_booking"/>
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_menu_user"
+        android:title="Pengelola Wisata"
+        android:icon="@drawable/ic_account_circle"/>
+    <item
+        android:id="@+id/nav_menu_traveler"
+        android:title="Traveler"
+        android:icon="@drawable/ic_card_travel"/>
+    <item
+        android:id="@+id/nav_menu_hotel"
+        android:title="Pengelola Hotel"
+        android:icon="@drawable/ic_hotel_black_24dp"/>
+</menu>
