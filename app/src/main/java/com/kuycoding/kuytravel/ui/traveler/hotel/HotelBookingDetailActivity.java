@@ -133,7 +133,6 @@ public class HotelBookingDetailActivity extends AppCompatActivity {
 
     private void createBarcode() {
         String id = booking.getId().trim();
-
         try {
             BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
             Bitmap bitmap = barcodeEncoder.encodeBitmap(id, BarcodeFormat.QR_CODE, 400, 400);
